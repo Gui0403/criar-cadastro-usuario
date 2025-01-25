@@ -302,6 +302,11 @@ nav ul li {
     left: 100%;
     transition: left 0.5s ease-in-out;
 
+    & h4 {
+        font-size: 1.1rem;
+        color: #5282E3;
+    }
+
     & .doadores {
         display: flex;
         justify-content: start;
@@ -376,15 +381,80 @@ nav ul li {
                 justify-content: center;
                 align-items: start;
                 flex-direction: column;
-    
+
                 & h3 {
                     letter-spacing: 1px;
-    
+
                 }
-    
+
                 & strong {
                     color: green;
                 }
+            }
+        }
+    }
+}
+
+.responsaveis {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    box-shadow: 1px 1px 3px 2px black;
+    width: 100dvh;
+    height: 200px;
+    padding: 20px;
+
+    & .conteudo-responsaveis {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 1px 3px 2px black;
+        width: 340px;
+        height: 150px;
+        gap: 10px;
+        padding: 20px;
+
+        & .status-responsavel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            & p {
+                font-size: 0.8rem;
+                background-color: #1C3464;
+                color: #E3B652;
+                border-radius: 4px;
+                padding: 2px;
+            }
+        }
+
+        & .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                border-radius: 50%;
+                box-shadow: 1px 1px 1px black;
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        & .info-responsavel {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            & .btn-respondavel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+                height: 36px;
+                background-color: #E3B652;
             }
         }
     }
