@@ -247,54 +247,6 @@ nav ul li {
     align-items: center;
 }
 
-/* Fim Conteúdo da pagina */
-
-/* Inicio Animações da pagina */
-.btns-slider {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-    gap: 20px;
-
-    & button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.1rem;
-        padding: 10px;
-        border-radius: 20px;
-        gap: 10px;
-        height: 40px;
-
-        & img {
-            width: 24px;
-        }
-    }
-
-    & button.active {
-        text-decoration: underline;
-        transition: 0.5;
-    }
-}
-
-.conteiner {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    margin: 40px;
-
-    & .paginacao {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-}
 
 .slide {
     display: none;
@@ -399,18 +351,22 @@ nav ul li {
     display: flex;
     justify-content: start;
     align-items: start;
-    box-shadow: 1px 1px 3px 2px black;
-    width: 100dvh;
-    height: 200px;
-    padding: 20px;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 100dvh;
+    height: fit-content;
+    gap: 30px;
 
-    & .conteudo-responsaveis {
+
+    & .conteiner-responsaveis {
         display: flex;
         justify-content: space-between;
         align-items: center;
         box-shadow: 1px 1px 3px 2px black;
-        width: 340px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         gap: 10px;
         padding: 20px;
 
@@ -419,6 +375,7 @@ nav ul li {
             justify-content: center;
             align-items: center;
             gap: 10px;
+            margin-bottom: 10px;
 
             & p {
                 font-size: 0.8rem;
@@ -448,6 +405,7 @@ nav ul li {
             align-items: start;
             flex-direction: column;
             gap: 10px;
+
             & .btn-respondavel {
                 display: flex;
                 justify-content: center;
@@ -456,6 +414,74 @@ nav ul li {
                 height: 36px;
                 background-color: #E3B652;
             }
+        }
+    }
+}
+
+.btns-slider {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        padding: 10px;
+        border-radius: 20px;
+        gap: 10px;
+        height: 40px;
+
+        & img {
+            width: 24px;
+        }
+    }
+
+    & button.active {
+        text-decoration: underline;
+        transition: 0.5;
+    }
+}
+
+/* Fim Conteúdo da pagina */
+
+/* Inicio Animações da pagina */
+
+.conteiner {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin: 40px;
+
+    & .paginacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin: 15px auto;
+
+
+        & .pagina-button {
+            background-color: #FFFFFF;
+            box-shadow: 1px 1px 2px black;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            padding: 10px;
+
+        }
+
+        & .active {
+            background-color: #000;
+            color: #FFFFFF;
         }
     }
 }
