@@ -195,6 +195,11 @@ nav ul li {
         margin-bottom: 20px;
 
 
+        & .progress {
+            width: 400px;
+        }
+
+
         & .btn-favoritos-compartilhar {
             display: flex;
             justify-content: end;
